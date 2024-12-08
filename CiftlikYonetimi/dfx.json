@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "CiftlikYonetimi_backend": {
+      "main": "src/CiftlikYonetimi_backend/main.mo",
+      "type": "motoko"
+    },
+    "CiftlikYonetimi_frontend": {
+      "dependencies": [
+        "CiftlikYonetimi_backend"
+      ],
+      "source": [
+        "src/CiftlikYonetimi_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
